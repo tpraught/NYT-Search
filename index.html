@@ -9,14 +9,46 @@
 
   </head>
   <body>
-  	<header>'
+
+  	<header>
+  		<h1>New York Times Search</h1>
   	</header>
 
   	<section id="parameters">
+
+		<h2>Search Parameters</h2>
+
+  		<form>
+  			<h3>Search Terms:</h3>
+  			<input type="text" name="searchTerms" id="searchTerms">
+		  	
+		  	<h3>Number of Records to Retrieve:</h3>
+		  	<select id="limit" name="articleLimit">
+			    <option value="1">1</option>
+			    <option value="5">5</option>
+			    <option value="10">10</option>
+  			</select>
+  			
+  			<h3>Start Year <em>(Optional)</em>:</h3>
+  			<input type="text" name="startYear" id="startYear">
+
+  			<h3>End Year <em>(Optional)</em>:</h3>
+  			<input type="text" name="endYear" id="endYear">
+
+		  	<input type="submit" value="Submit" id="searchButton">
+
+		  	<input type="button" value="clear" id="clearButton">
+		</form> 
+
   	</section>
 
-  	<section id="articles">
+  	<section id="topArticles">
+  		<h2>Top Articles</h2>
+  		<div id="articles"></div>
   	</section>
+
+  	<footer>
+  	</footer>
 
 
 	<!-- jQuery -->

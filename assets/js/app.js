@@ -1,9 +1,6 @@
+$("#searchButton").on("click", function(event) {
 
-
-
-$("#searchButton").on("Click", function() {
-
-
+	event.preventDefault();
 
 	var apiKey = "d1749ff7c23545bb89fbde848f23a6c6";
 
